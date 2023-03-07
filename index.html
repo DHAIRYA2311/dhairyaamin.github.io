@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <form action="home.html" method="post">
+  <div class="imgcontainer">
+    <img src="123.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="email"><b>Username</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit"> Login </button> 
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="password">Forgot <a href="#">password?</a></span>
+  </div>
+      </form>
+  <script> 
+    function auth(){
+
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value; if(email== "admin@gmail.com" && password=="admin123"){ window.location.assign("home.html"); alert("Login Successfull");
+} 
+else{
+  alert("Invalid Information");
+  return;
+}
+  </script>
+</body>
+</html>
